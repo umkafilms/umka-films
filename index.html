@@ -7,137 +7,99 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Montserrat', Arial, sans-serif;
-      background-color: #d0e7f9; /* светло-голубой фон */
-      color: #222;
+      font-family: Arial, sans-serif;
+      background-color: #f0f4fb;
+      color: #333;
     }
+
     header {
       background-color: #87b9f7;
-      padding: 20px;
-      text-align: center;
+      padding: 20px 30px;
       color: white;
     }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto;
+      gap: 30px;
+    }
+
     header img {
-      height: 80px; /* растягиваем лого по высоте */
+      height: 320px; /* логотип в 4 раза больше */
       object-fit: contain;
     }
-    h1 {
-      margin: 10px 0 5px;
+
+    .header-text {
+      flex: 1;
     }
-    h2 {
-      color: #0057b7;
+
+    .header-text h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.5rem;
     }
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 20px;
+
+    .header-text p {
+      margin: 0 0 15px 0;
+      font-size: 1.2rem;
     }
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-between;
-    }
-    .service-item {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
-      flex: 1 1 260px;
-      padding: 15px;
-      text-align: center;
-    }
-    .service-item img {
-      width: 100%;
-      max-height: 150px;
-      object-fit: cover;
-      border-radius: 6px;
-      margin-bottom: 12px;
-    }
-    .contact {
-      background: #87b9f7;
-      color: white;
-      text-align: center;
-      padding: 20px 10px;
-      border-radius: 0 0 8px 8px;
-      margin-top: 40px;
-    }
-    a.button {
+
+    .button {
       display: inline-block;
-      background-color: #0057b7;
+      background-color: #0b60f5;
       color: white;
-      padding: 12px 25px;
-      border-radius: 25px;
+      padding: 10px 25px;
       text-decoration: none;
-      font-weight: 600;
-      margin-top: 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
-    a.button:hover {
-      background-color: #004494;
+
+    .button:hover {
+      background-color: #084bb3;
     }
-    @media(max-width: 600px) {
-      .services {
-        flex-direction: column;
-      }
+
+    /* Ниже пример для секции с картинками (если нужно) */
+
+    .gallery {
+      max-width: 900px;
+      margin: 40px auto;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .gallery img {
+      height: 150px;
+      object-fit: contain;
+      border: 2px solid #87b9f7;
+      border-radius: 8px;
+      background: white;
+      padding: 5px;
     }
   </style>
 </head>
 <body>
-
-<header>
-  <img src="logo.png" alt="UMKA Films UG Logo" />
-  <h1>UMKA Films UG</h1>
-  <p>Professionelle Videoproduktion & Studiovermietung in Berlin</p>
-  <a href="mailto:umkafilms@mailbox.org" class="button">Jetzt anfragen</a>
-</header>
-
-<div class="container">
-
-  <section>
-    <h2>Über uns</h2>
-    <p>UMKA Films UG ist ein kreatives Videoproduktionsunternehmen mit Sitz in Berlin.  
-    Ob Imagefilm, Eventaufnahme oder Live-Stream – wir setzen Ihre Ideen professionell und zuverlässig um.</p>
-  </section>
-
-  <section>
-    <h2>Unsere Services</h2>
-    <div class="services">
-      <div class="service-item">
-        <img src="edit.jpg" alt="Videoschnitt & Postproduktion" />
-        <h3>Videoschnitt & Postproduktion</h3>
-        <p>Schnitt, Effekte, Color-Grading & Tonmischung</p>
-      </div>
-      <div class="service-item">
-        <img src="ton.jpg" alt="Tonaufnahme & Equipment" />
-        <h3>Equipmentvermietung</h3>
-        <p>Kameras, Licht, Ton – alles für Ihre Produktion</p>
-      </div>
-      <div class="service-item">
-        <img src="ton2.jpg" alt="Tonaufnahme" />
-        <h3>Tonaufnahme</h3>
-        <p>Professionelle Tonaufnahmen und Mikrofontechnik</p>
-      </div>
-      <div class="service-item">
-        <img src="camera.jpg" alt="Videoproduktion" />
-        <h3>Videoproduktion</h3>
-        <p>Planung, Regie & Dreh für Firmen, Events, Künstler</p>
-      </div>
-      <div class="service-item">
-        <img src="podcast.jpg" alt="Live-Streaming & Podcast" />
-        <h3>Live-Streaming & Podcast</h3>
-        <p>Zuverlässige Technik für Online-Events und Podcasts</p>
+  <header>
+    <div class="header-container">
+      <img src="logo.png" alt="UMKA Films UG Logo" />
+      <div class="header-text">
+        <h1>UMKA Films UG</h1>
+        <p>Professionelle Videoproduktion & Studiovermietung in Berlin</p>
+        <a href="mailto:umkafilms@mailbox.org" class="button">Jetzt anfragen</a>
       </div>
     </div>
+  </header>
+
+  <!-- Пример блока с картинками -->
+  <section class="gallery">
+    <img src="edit.png" alt="Edit" />
+    <img src="ton.png" alt="Ton" />
+    <img src="ton2.png" alt="Ton 2" />
+    <img src="camera.png" alt="Camera" />
+    <img src="podcast.png" alt="Podcast" />
   </section>
-
-</div>
-
-<div class="contact">
-  <h2>Kontakt</h2>
-  <p>📍 Berlin</p>
-  <p>📧 <a href="mailto:umkafilms@mailbox.org" style="color: white; text-decoration: underline;">umkafilms@mailbox.org</a></p>
-  <p>Schreiben Sie uns für ein unverbindliches Angebot!</p>
-  <a href="mailto:umkafilms@mailbox.org" class="button">Jetzt anfragen</a>
-</div>
-
 </body>
 </html>
