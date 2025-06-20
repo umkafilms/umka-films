@@ -2,8 +2,12 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>UMKA Films UG</title>
+
+  <!-- Подключение Google Fonts: Poppins и Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+
   <style>
     * {
       box-sizing: border-box;
@@ -11,7 +15,7 @@
 
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', Arial, sans-serif;
       background-color: #e0f2ff;
       color: #222;
     }
@@ -36,27 +40,36 @@
 
     .header-text h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      color: #003d66;
     }
 
     .header-text p {
-      font-size: 1.2rem;
-      margin: 10px 0;
+      font-size: 1.4rem;
+      margin: 10px 0 20px;
+      font-family: 'Roboto', sans-serif;
+      color: #004080;
     }
 
     .button {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 12px 24px;
       background-color: #0066cc;
       color: #fff;
       text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      margin-top: 10px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 3px 6px rgba(0, 102, 204, 0.4);
     }
 
     .button:hover {
       background-color: #004d99;
+      box-shadow: 0 5px 12px rgba(0, 77, 153, 0.6);
     }
 
     .gallery {
@@ -80,19 +93,40 @@
       border-radius: 8px;
       background: white;
       padding: 5px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-card img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
     }
 
     .image-card p {
       margin-top: 12px;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      color: #003d66;
     }
 
     footer {
       text-align: center;
       padding: 20px;
       background-color: #b0d9f7;
-      font-size: 0.9rem;
+      font-size: 1rem;
+      font-family: 'Roboto', sans-serif;
+      color: #003d66;
+    }
+
+    footer a {
+      color: #004080;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 600px) {
@@ -124,23 +158,23 @@
 
   <section class="gallery">
     <div class="image-card">
-      <img src="camera.jpg" alt="Videoproduktion">
+      <img src="camera.jpg" alt="Videoproduktion" />
       <p>Videoproduktion</p>
     </div>
     <div class="image-card">
-      <img src="ton.jpg" alt="Tonaufnahme">
+      <img src="ton.jpg" alt="Tonaufnahme" />
       <p>Tonaufnahme</p>
     </div>
     <div class="image-card">
-      <img src="ton2.jpg" alt="Tonstudio">
+      <img src="ton2.jpg" alt="Tonstudio" />
       <p>Tonstudio</p>
     </div>
     <div class="image-card">
-      <img src="edit.jpg" alt="Videoschnitt">
+      <img src="edit.jpg" alt="Videoschnitt" />
       <p>Videoschnitt</p>
     </div>
     <div class="image-card">
-      <img src="podcast.jpg" alt="Podcast Produktion">
+      <img src="podcast.jpg" alt="Podcast Produktion" />
       <p>Podcast Produktion</p>
     </div>
   </section>
