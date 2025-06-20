@@ -1,54 +1,131 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Umka Films</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UMKA Films UG</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #d0eaff; /* светло-голубой фон */
+      background-color: #f0f4fb;
+      color: #333;
     }
 
     header {
-      padding: 20px;
-      display: flex;
-      align-items: center;
+      background-color: #87b9f7;
+      padding: 20px 30px;
+      color: white;
     }
 
-    .logo {
-      width: 400px; /* увеличенный логотип */
+    .header-container {
+      display: flex;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 320px; /* логотип в 4 раза больше */
+      object-fit: contain;
+    }
+
+    .header-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .header-text h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.5rem;
+    }
+
+    .header-text p {
+      margin: 0 0 15px 0;
+      font-size: 1.2rem;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #0b60f5;
+      color: white;
+      padding: 10px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #084bb3;
     }
 
     .gallery {
+      max-width: 1000px;
+      margin: 40px auto;
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
       gap: 20px;
-      padding: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
-    .gallery img {
-      max-width: 300px;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    .image-card {
+      text-align: center;
+      width: 180px;
+    }
+
+    .image-card img {
+      height: 150px;
+      object-fit: contain;
+      border: 2px solid #87b9f7;
+      border-radius: 8px;
+      background: white;
+      padding: 5px;
+      width: 100%;
+    }
+
+    .image-card p {
+      margin-top: 8px;
+      font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="logo.png" alt="Umka Films Logo" class="logo">
+    <div class="header-container">
+      <img src="logo.png" alt="UMKA Films UG Logo" />
+      <div class="header-text">
+        <h1>UMKA Films UG</h1>
+        <p>Professionelle Videoproduktion & Studiovermietung in Berlin</p>
+        <a href="mailto:umkafilms@mailbox.org" class="button">Jetzt anfragen</a>
+      </div>
+    </div>
   </header>
 
+  <!-- Галерея с подписями -->
   <section class="gallery">
-    <img src="edit.jpg" alt="Edit">
-    <img src="ton.jpg" alt="Ton">
-    <img src="ton2.jpg" alt="Ton 2">
-    <img src="camera.jpg" alt="Camera">
-    <img src="podcast.jpg" alt="Podcast">
+    <div class="image-card">
+      <img src="edit.png" alt="Edit" />
+      <p>Монтаж</p>
+    </div>
+    <div class="image-card">
+      <img src="ton.png" alt="Ton" />
+      <p>Тон</p>
+    </div>
+    <div class="image-card">
+      <img src="ton2.png" alt="Ton 2" />
+      <p>Доп. Тон</p>
+    </div>
+    <div class="image-card">
+      <img src="camera.png" alt="Camera" />
+      <p>Камера</p>
+    </div>
+    <div class="image-card">
+      <img src="podcast.png" alt="Podcast" />
+      <p>Подкаст</p>
+    </div>
   </section>
-
 </body>
 </html>
