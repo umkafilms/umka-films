@@ -6,144 +6,138 @@
   <title>UMKA Films UG</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0; padding: 0;
-      background: #fff;
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background-color: #d0e7f9; /* светло-голубой фон */
       color: #222;
-      line-height: 1.6;
     }
     header {
-      background-color: #E37A2D;
-      color: white;
-      padding: 20px 15px;
+      background-color: #87b9f7;
+      padding: 20px;
       text-align: center;
+      color: white;
     }
     header img {
-      height: 80px;
-      margin-bottom: 10px;
+      height: 80px; /* растягиваем лого по высоте */
+      object-fit: contain;
     }
-    header h1 {
-      margin: 0;
-      font-weight: 700;
-      font-size: 2.4rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin: 5px 0 15px;
-    }
-    header a.button {
-      background: white;
-      color: #E37A2D;
-      padding: 12px 25px;
-      font-weight: 600;
-      text-decoration: none;
-      border-radius: 25px;
-      display: inline-block;
-      transition: background-color 0.3s ease;
-    }
-    header a.button:hover {
-      background-color: #d66c1f;
-      color: white;
-    }
-    main {
-      max-width: 960px;
-      margin: 30px auto;
-      padding: 0 15px;
-    }
-    section {
-      margin-bottom: 40px;
+    h1 {
+      margin: 10px 0 5px;
     }
     h2 {
-      color: #E37A2D;
-      margin-bottom: 15px;
-      font-size: 1.8rem;
-      border-bottom: 3px solid #E37A2D;
-      display: inline-block;
-      padding-bottom: 5px;
+      color: #0057b7;
     }
-    ul.services {
-      list-style: none;
-      padding: 0;
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
     }
-    ul.services li {
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .service-item {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      flex: 1 1 260px;
+      padding: 15px;
+      text-align: center;
+    }
+    .service-item img {
+      width: 100%;
+      max-height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
       margin-bottom: 12px;
-      font-size: 1.1rem;
     }
-    ul.services li::before {
-      content: "▶ ";
-      color: #E37A2D;
-      font-weight: bold;
-    }
-    footer {
+    .contact {
+      background: #87b9f7;
+      color: white;
       text-align: center;
       padding: 20px 10px;
-      background: #222;
+      border-radius: 0 0 8px 8px;
+      margin-top: 40px;
+    }
+    a.button {
+      display: inline-block;
+      background-color: #0057b7;
       color: white;
-      font-size: 0.9rem;
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 15px;
     }
-    .contact-info {
-      font-size: 1.1rem;
-      margin-bottom: 10px;
+    a.button:hover {
+      background-color: #004494;
     }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-      header p {
-        font-size: 1rem;
+    @media(max-width: 600px) {
+      .services {
+        flex-direction: column;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-<img src="logo.png" alt="UMKA Films Logo" height="300" width="300">
-    <h1>UMKA Films UG</h1>
-    <p>Professionelle Videoproduktion & Studiovermietung in Berlin</p>
-    <a href="mailto:umkafilms@mailbox.org" class="button">Jetzt anfragen</a>
-  </header>
 
-  <main>
-    <section id="about">
-      <h2>Über uns</h2>
-      <p>
-        UMKA Films UG ist ein kreatives Videoproduktionsunternehmen mit Sitz in Berlin.<br />
-        Ob Imagefilm, Eventaufnahme oder Live-Stream – wir setzen Ihre Ideen professionell und zuverlässig um.<br />
-        Unser charmantes Maskottchen begleitet uns dabei: mit Herz, Technik & Know-how.
-      </p>
-    </section>
+<header>
+  <img src="logo.png" alt="UMKA Films UG Logo" />
+  <h1>UMKA Films UG</h1>
+  <p>Professionelle Videoproduktion & Studiovermietung in Berlin</p>
+  <a href="mailto:umkafilms@mailbox.org" class="button">Jetzt anfragen</a>
+</header>
 
-    <section id="services">
-      <h2>Unsere Services</h2>
-      <ul class="services">
-        <li>🎬 Videoproduktion – Planung, Regie & Dreh für Firmen, Events, Künstler</li>
-        <li>🏢 Studiovermietung – Voll ausgestattetes Filmstudio im Zentrum Berlins</li>
-        <li>🎥 Equipmentvermietung – Kameras, Licht, Ton – alles, was Sie für Ihre Produktion brauchen</li>
-        <li>✂️ Videoschnitt & Postproduktion – Schnitt, Effekte, Color-Grading & Tonmischung</li>
-        <li>📡 Live-Streaming – Zuverlässige Technik für Online-Events und hybride Formate</li>
-      </ul>
-    </section>
+<div class="container">
 
-    <section id="why-us">
-      <h2>Warum mit uns?</h2>
-      <ul>
-        <li>✓ Kreativ & erfahren</li>
-        <li>✓ Technisch top ausgestattet</li>
-        <li>✓ Freundlich & flexibel</li>
-        <li>✓ Mitten in Berlin</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Über uns</h2>
+    <p>UMKA Films UG ist ein kreatives Videoproduktionsunternehmen mit Sitz in Berlin.  
+    Ob Imagefilm, Eventaufnahme oder Live-Stream – wir setzen Ihre Ideen professionell und zuverlässig um.</p>
+  </section>
 
-    <section id="contact">
-      <h2>Kontakt</h2>
-      <p class="contact-info">📍 Standort: Berlin</p>
-      <p class="contact-info">📧 E-Mail: <a href="mailto:umkafilms@mailbox.org">umkafilms@mailbox.org</a></p>
-      <p>📩 Schreiben Sie uns für ein unverbindliches Angebot!</p>
-    </section>
-  </main>
+  <section>
+    <h2>Unsere Services</h2>
+    <div class="services">
+      <div class="service-item">
+        <img src="edit.jpg" alt="Videoschnitt & Postproduktion" />
+        <h3>Videoschnitt & Postproduktion</h3>
+        <p>Schnitt, Effekte, Color-Grading & Tonmischung</p>
+      </div>
+      <div class="service-item">
+        <img src="ton.jpg" alt="Tonaufnahme & Equipment" />
+        <h3>Equipmentvermietung</h3>
+        <p>Kameras, Licht, Ton – alles für Ihre Produktion</p>
+      </div>
+      <div class="service-item">
+        <img src="ton2.jpg" alt="Tonaufnahme" />
+        <h3>Tonaufnahme</h3>
+        <p>Professionelle Tonaufnahmen und Mikrofontechnik</p>
+      </div>
+      <div class="service-item">
+        <img src="camera.jpg" alt="Videoproduktion" />
+        <h3>Videoproduktion</h3>
+        <p>Planung, Regie & Dreh für Firmen, Events, Künstler</p>
+      </div>
+      <div class="service-item">
+        <img src="podcast.jpg" alt="Live-Streaming & Podcast" />
+        <h3>Live-Streaming & Podcast</h3>
+        <p>Zuverlässige Technik für Online-Events und Podcasts</p>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    &copy; 2025 UMKA Films UG – Alle Rechte vorbehalten
-  </footer>
+</div>
+
+<div class="contact">
+  <h2>Kontakt</h2>
+  <p>📍 Berlin</p>
+  <p>📧 <a href="mailto:umkafilms@mailbox.org" style="color: white; text-decoration: underline;">umkafilms@mailbox.org</a></p>
+  <p>Schreiben Sie uns für ein unverbindliches Angebot!</p>
+  <a href="mailto:umkafilms@mailbox.org" class="button">Jetzt anfragen</a>
+</div>
+
 </body>
 </html>
