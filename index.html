@@ -1,105 +1,54 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>UMKA Films UG</title>
+  <meta charset="UTF-8">
+  <title>Umka Films</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f0f4fb;
-      color: #333;
+      background-color: #d0eaff; /* светло-голубой фон */
     }
 
     header {
-      background-color: #87b9f7;
-      padding: 20px 30px;
-      color: white;
-    }
-
-    .header-container {
+      padding: 20px;
       display: flex;
       align-items: center;
-      max-width: 900px;
-      margin: 0 auto;
-      gap: 30px;
     }
 
-    header img {
-      height: 320px; /* логотип в 4 раза больше */
-      object-fit: contain;
+    .logo {
+      width: 400px; /* увеличенный логотип */
     }
-
-    .header-text {
-      flex: 1;
-    }
-
-    .header-text h1 {
-      margin: 0 0 10px 0;
-      font-size: 2.5rem;
-    }
-
-    .header-text p {
-      margin: 0 0 15px 0;
-      font-size: 1.2rem;
-    }
-
-    .button {
-      display: inline-block;
-      background-color: #0b60f5;
-      color: white;
-      padding: 10px 25px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #084bb3;
-    }
-
-    /* Ниже пример для секции с картинками (если нужно) */
 
     .gallery {
-      max-width: 900px;
-      margin: 40px auto;
       display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
     }
 
     .gallery img {
-      height: 150px;
-      object-fit: contain;
-      border: 2px solid #87b9f7;
-      border-radius: 8px;
-      background: white;
-      padding: 5px;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="header-container">
-      <img src="logo.png" alt="UMKA Films UG Logo" />
-      <div class="header-text">
-        <h1>UMKA Films UG</h1>
-        <p>Professionelle Videoproduktion & Studiovermietung in Berlin</p>
-        <a href="mailto:umkafilms@mailbox.org" class="button">Jetzt anfragen</a>
-      </div>
-    </div>
+    <img src="logo.png" alt="Umka Films Logo" class="logo">
   </header>
 
-  <!-- Пример блока с картинками -->
   <section class="gallery">
-    <img src="edit.png" alt="Edit" />
-    <img src="ton.png" alt="Ton" />
-    <img src="ton2.png" alt="Ton 2" />
-    <img src="camera.png" alt="Camera" />
-    <img src="podcast.png" alt="Podcast" />
+    <img src="edit.jpg" alt="Edit">
+    <img src="ton.jpg" alt="Ton">
+    <img src="ton2.jpg" alt="Ton 2">
+    <img src="camera.jpg" alt="Camera">
+    <img src="podcast.jpg" alt="Podcast">
   </section>
+
 </body>
 </html>
